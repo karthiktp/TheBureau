@@ -1,0 +1,44 @@
+//
+//  BasicDetailsViewController.h
+//  TheBureau
+//
+//  Created by Ama1's iMac on 29/07/16.
+//  Copyright © 2016 Bureau. All rights reserved.
+//
+
+#import "BUBaseViewController.h"
+#import "BUProfileEditingVC.h"
+
+@interface BasicDetailsViewController : BUBaseViewController<UITextFieldDelegate,UIActionSheetDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+@property(weak, nonatomic) IBOutlet UIView *nonEditingView,*editingView;
+@property(weak, nonatomic) IBOutlet BUProfileEditingVC *parentVC;
+@property (strong, nonatomic) NSMutableDictionary *basicInfoDict;
+#pragma mark -
+#pragma mark - Gender selection
+@property (weak, nonatomic) IBOutlet UIImageView *femaleImgView;
+
+@property(nonatomic,weak) IBOutlet UIImageView *maleImgView;
+@property(nonatomic,weak) IBOutlet UIButton *genderSelectionBtn;
+@property (strong, nonatomic) IBOutlet UIButton *headerBtn;
+-(IBAction)setGender:(id)sender;
+
+#pragma mark -
+#pragma mark - Height Information
+
+@property(nonatomic) NSMutableArray *feetMutableArray;
+@property(nonatomic) NSMutableArray *inchesMutableArray;
+@property(nonatomic,weak) NSString *feetStr,*inchStr,*maritalStatus;
+@property (weak, nonatomic) IBOutlet UITextField *heighTextField,*nameTF;
+
+@property(nonatomic) NSMutableArray *ageArray;
+@property(nonatomic) NSMutableArray *radiusArray;
+@property(nonatomic,weak)IBOutlet UITextField *ageLabel,*radiusLabel;
+@property(nonatomic) NSArray *maritalStatusArray;
+@property (weak, nonatomic) IBOutlet UITextField *maritalStatusTF;
+
+//-(void)setDatasource:(NSMutableDictionary *)inBasicInfoDict;
+
+@property(nonatomic,weak) IBOutlet UIButton *neverMarriedBtn;
+@property(nonatomic,weak) IBOutlet UIButton *divorcedBtn;
+@property(nonatomic,weak) IBOutlet UIButton *widowedBtn;
+@end

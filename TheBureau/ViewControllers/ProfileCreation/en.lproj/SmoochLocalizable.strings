@@ -1,0 +1,13 @@
+/*
+  SmoochLocalizable.strings
+  TheBureau
+
+  Created by Accion Labs on 06/03/16.
+  Copyright © 2016 Bureau. All rights reserved.
+*/
+
+
+"Messages" = "Customer Service";
+
+/* Conversation header. Uses CFBundleDisplayName */
+"This is the start of your conversation with the %@ team. We'll stay in touch to help you get the most out of your app.\nFeel free to leave us a message about anything that’s on your mind. We’ll get back to your questions, suggestions or anything else as soon as we can." = "This is the start of your conversation with %@ Team. We'll stay in touch to help you get the most out of your experience.\nFeel free to leave us a message with any questions, comments, suggestions, or concerns. We will get back to you as soon as we can. Thanks!";

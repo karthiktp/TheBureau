@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="imagePicker" id="iN0-l3-epB" customClass="ImagePicketView">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smj-Eq-viK">
+                    <rect key="frame" x="20" y="20" width="48" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Cancel"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap2-dB-I49">
+                    <rect key="frame" x="307" y="20" width="53" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Choose"/>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="84J-0a-Tdr">
+                    <rect key="frame" x="20" y="58" width="340" height="297"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXE-6G-TWb">
+                            <rect key="frame" x="0.0" y="0.0" width="340" height="297"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWP-uf-gEZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="297"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="CWP-uf-gEZ" secondAttribute="trailing" id="5Xi-VI-db3"/>
+                                <constraint firstItem="CWP-uf-gEZ" firstAttribute="top" secondItem="qXE-6G-TWb" secondAttribute="top" id="N30-LN-9xj"/>
+                                <constraint firstAttribute="bottom" secondItem="CWP-uf-gEZ" secondAttribute="bottom" id="RHx-Nh-VxY"/>
+                                <constraint firstItem="CWP-uf-gEZ" firstAttribute="leading" secondItem="qXE-6G-TWb" secondAttribute="leading" id="eHA-4s-JA3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qXE-6G-TWb" secondAttribute="trailing" id="2OT-dK-wPm"/>
+                        <constraint firstItem="qXE-6G-TWb" firstAttribute="centerY" secondItem="84J-0a-Tdr" secondAttribute="centerY" id="4ax-rg-hqQ"/>
+                        <constraint firstItem="qXE-6G-TWb" firstAttribute="top" secondItem="84J-0a-Tdr" secondAttribute="top" id="8Pd-RF-0FA"/>
+                        <constraint firstItem="qXE-6G-TWb" firstAttribute="top" secondItem="84J-0a-Tdr" secondAttribute="top" id="9Kh-f8-4dg"/>
+                        <constraint firstItem="qXE-6G-TWb" firstAttribute="leading" secondItem="84J-0a-Tdr" secondAttribute="leading" id="HQx-rW-C4U"/>
+                        <constraint firstAttribute="bottom" secondItem="qXE-6G-TWb" secondAttribute="bottom" id="X2d-RO-AP0"/>
+                        <constraint firstItem="qXE-6G-TWb" firstAttribute="leading" secondItem="84J-0a-Tdr" secondAttribute="leading" id="cGs-9V-Bkj"/>
+                        <constraint firstAttribute="trailing" secondItem="qXE-6G-TWb" secondAttribute="trailing" id="mGD-Gn-7hl"/>
+                        <constraint firstItem="qXE-6G-TWb" firstAttribute="centerX" secondItem="84J-0a-Tdr" secondAttribute="centerX" id="rkE-3m-uCH"/>
+                        <constraint firstAttribute="bottom" secondItem="qXE-6G-TWb" secondAttribute="bottom" id="szU-N9-lJI"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.32606403374233128" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="84J-0a-Tdr" secondAttribute="bottom" constant="25" id="66z-Xh-TF1"/>
+                <constraint firstItem="84J-0a-Tdr" firstAttribute="trailing" secondItem="ap2-dB-I49" secondAttribute="trailing" id="Ys2-j2-Zc9"/>
+                <constraint firstItem="Smj-Eq-viK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ZQb-HU-fpU"/>
+                <constraint firstAttribute="trailing" secondItem="ap2-dB-I49" secondAttribute="trailing" constant="20" id="bot-5f-CPT"/>
+                <constraint firstItem="Smj-Eq-viK" firstAttribute="top" secondItem="ap2-dB-I49" secondAttribute="top" id="cFq-Bh-uvn"/>
+                <constraint firstItem="Smj-Eq-viK" firstAttribute="bottom" secondItem="ap2-dB-I49" secondAttribute="bottom" id="fTj-v5-iWJ"/>
+                <constraint firstItem="Smj-Eq-viK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="jVg-LS-fPB"/>
+                <constraint firstItem="84J-0a-Tdr" firstAttribute="top" secondItem="Smj-Eq-viK" secondAttribute="bottom" constant="8" symbolic="YES" id="mTV-yy-Tur"/>
+                <constraint firstItem="84J-0a-Tdr" firstAttribute="leading" secondItem="Smj-Eq-viK" secondAttribute="leading" id="tC1-Bm-Hsx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="Smj-Eq-viK" id="sgH-Ab-NxU"/>
+                <outlet property="chooseButton" destination="ap2-dB-I49" id="Rce-Qs-AAV"/>
+                <outlet property="imageScrollView" destination="84J-0a-Tdr" id="Jfg-rQ-Xsv"/>
+                <outlet property="selectedImage" destination="CWP-uf-gEZ" id="iD5-lR-OAA"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="91"/>
+        </view>
+    </objects>
+</document>
